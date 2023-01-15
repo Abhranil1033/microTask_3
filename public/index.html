@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADDRESS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+   <div class="container">
+    <div class="field" id="form">
+      <form action="/get-address" id="getLatLong" method="post">
+        <h1 id ="latlong">ENTER ADDRESS</h1>
+  
+        <input placeholder="Country" type="text" name="country" id="country" />
+  
+        <input placeholder="State" type="text" name="state" id="state" />
+  
+        <input placeholder="City" type="text" name="city" id="city" />
+  
+        <input placeholder="Landmark" type="text" name="landmark" id="landmark" />
+  
+        <input placeholder="PIN" type="number" name="pin" id="pin" />
+  
+        <input type="submit" value="Get Location" />
+      </form>
+  
+    </div>
+  
+    <div id="your-address">
+      <h2>Address</h2>
+    </div>
+   </div>
+
+  <script src="js/get_latlon_from_address.js"></script>
+
+  <script src="js/get_user_location.js"></script>
+
+
+</body>
+
+</html>
